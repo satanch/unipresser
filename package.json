@@ -1,0 +1,30 @@
+{
+  "name": "unipresser",
+  "version": "0.0.1",
+  "description": "Node.js native mouse move, mouse click and keyboard typing",
+  "main": "index.js",
+  "scripts": {
+    "install": "node install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satanch/unipresser.git"
+  },
+  "keywords": [
+    "mouse",
+    "keyboard",
+    "click",
+    "move",
+    "press",
+    "automation"
+  ],
+  "author": "satanch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satanch/unipresser/issues"
+  },
+  "homepage": "https://github.com/satanch/unipresser#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
