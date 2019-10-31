@@ -43,7 +43,6 @@ const fs = require('fs');
             responseType: 'arraybuffer'
         });
 
-
         console.log(`💾  Saving native addon...`);
 
         fs.mkdirSync('./.addon');

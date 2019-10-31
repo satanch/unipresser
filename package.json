@@ -1,6 +1,6 @@
 {
   "name": "unipresser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js native mouse move, mouse click and keyboard typing",
   "main": "index.js",
   "scripts": {
