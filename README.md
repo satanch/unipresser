@@ -81,3 +81,31 @@ Presses a key with a given key name or character.
 ```js
 unipresser.emitKeyPress('enter'.toLowerCase()); // of course, toLowerCase is optional, but key names should be in lower case
 ```
+
+## Examples
+
+```js
+// RobotJS (http://robotjs.io/docs/examples) sine wave example, but with native unipresser
+const unipresser = require('unipresser');
+
+// All delays should be executed by using JS mechanics, in this case
+// we will use async sleep instead of setInterval
+const sleep = function(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+(async () => {
+    const twoPI = Math.PI * 2.0;
+    const screenSize = unipresser.getScreenResolution();
+    const height = (screenSize[1] / 2) - 10;
+    const width = screenSize[0];
+
+    for (let x = 0; x < width; x++) {
+        y = height * Math.sin((twoPI * x) / width) + height;
+        unipresser.setMouseCursor(x, y);
+        await sleep(2);
+    }
+})();
+
+// Works like a charm!
+```
