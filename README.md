@@ -2,7 +2,7 @@
 
 **WARNING! Development in progress**
 
-This library allows you to get mouse position, move mouse and perform mouse clicks from your Node.js script.
+This library allows you to get mouse position, move mouse, perform mouse clicks and keyboard typing from your Node.js script.
 
 * Python is not required!
 * Java is not required!
@@ -33,8 +33,8 @@ Use `npm install unipresser` command.
 ## Usage
 
 ```js
-    const unipresser = require('unipresser');
-    console.log(unipresser.getMouseCursor());
+const unipresser = require('unipresser');
+console.log(unipresser.getMouseCursor());
 ```
 
 ## Available methods
@@ -79,5 +79,5 @@ unipresser.getScreenResolution();
 Presses a key with a given key name or character.
 
 ```js
-unipresser.emitKeyPress('enter').toLowerCase(); // of course, toLowerCase is optional, but key names should be in lower case
+unipresser.emitKeyPress('enter'.toLowerCase()); // of course, toLowerCase is optional, but key names should be in lower case
 ```
